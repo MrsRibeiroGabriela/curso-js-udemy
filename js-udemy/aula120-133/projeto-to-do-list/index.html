@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa">
+            <h1 class="titulo">TO DO LIST</h1>
+            <div class="paletas_div">
+                <div id="paleta1" class="paleta"></div><!--onclick="definePaleta('seagreen')"-->
+                <div id="paleta2" class="paleta"></div><!--onmousemove="definePaleta('slateblue')"-->
+                <div id="paleta3" class="paleta"></div><!--ondblclick="definePaleta('tomato')"-->
+            </div>
+            <p class="erro"></p>
+            <div class="input_div">
+                <input class="input" type="text" placeholder="Digite uma atividade">
+                <button class="botao_adc">+</button>
+            </div>
+            <div class="lista_atividades">
+                <!--Atividades serão adicionadas dinâmicamente por Js-->
+            </div>
+            <button class="botao_del_todos">Limpar lista</button><!--onclick="removeAtividades()"-->
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
